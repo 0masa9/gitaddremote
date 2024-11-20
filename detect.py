@@ -7,3 +7,4 @@ boxes = results[0].boxes
 for box in boxes:
     print(box.data)
 print(results[0].names)
+
