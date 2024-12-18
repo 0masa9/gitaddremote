@@ -36,8 +36,8 @@ while cap.isOpened():
 
 
     sum = 0
-    for i in range(17):
-        for j in range (3):
+    for i in range(5,17):
+        for j in range (2):
             test = video_data[0][i][j]-image_data[0][i][j]
             test=abs(test)
             sum=sum+test
@@ -46,6 +46,10 @@ while cap.isOpened():
         min_flame= cnt
         min=sum
 
+    print(cnt)
+    print(sum)
+    print(min)
+    print(min_flame)
     if success:
         # 読み出しに成功すれば以下を実行する
         cv2.putText(
